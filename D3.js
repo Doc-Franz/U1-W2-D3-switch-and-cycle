@@ -242,7 +242,10 @@ console.log(charactersNames, charactersNames.length);
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
 
-let randomNumer = parseInt(prompt("Select a number between 0 and 9"));
+const randomNumer = Math.floor(Math.random() * 10);
 console.log(
-  `The name is ${starWarsCharacters[randomNumer].name}, the height is ${starWarsCharacters[randomNumer].height}, the mass is ${starWarsCharacters[randomNumer].mass}, the hair color is ${starWarsCharacters[randomNumer].hair_color}, the skin color is ${starWarsCharacters[randomNumer].skin_color}, the eye color is ${starWarsCharacters[randomNumer].eye_color}, the birthday year is ${starWarsCharacters[randomNumer].birth_year}, the gender is ${starWarsCharacters[randomNumer].gender}`
+  `The name is ${starWarsCharacters[randomNumer].name}, the height is ${starWarsCharacters[randomNumer].height}, 
+  the mass is ${starWarsCharacters[randomNumer].mass}, the hair color is ${starWarsCharacters[randomNumer].hair_color}, 
+  the skin color is ${starWarsCharacters[randomNumer].skin_color}, the eye color is ${starWarsCharacters[randomNumer].eye_color}, 
+  the birthday year is ${starWarsCharacters[randomNumer].birth_year}, the gender is ${starWarsCharacters[randomNumer].gender}`
 );
